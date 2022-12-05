@@ -65,7 +65,7 @@ const cardsElement = document.querySelector("div.cards");
 for (let i = 0; i < ourTeam.length; i++){
 
     const cardElement = document.createElement("div");
-    cardElement.innerText = ourTeam[i].name + ourTeam[i].position + ourTeam[i].img;
+    cardElement.innerHTML = `${ourTeam[i].name} ${ourTeam[i].position} <img src="./img/${ourTeam[i].img}" alt="pictures"></img>;`
     cardsElement.appendChild(cardElement);
 }
 
