@@ -65,7 +65,7 @@ const cardsElement = document.querySelector("div.cards");
 for (let i = 0; i < ourTeam.length; i++){
 
     const cardElement = document.createElement("div");
-    cardElement.innerHTML = `<p>${ourTeam[i].name}</p> <p>${ourTeam[i].position}</p> <img class="d-block w-100" src="./img/${ourTeam[i].img}" alt="pictures"></img>`;
+    cardElement.innerHTML = `<p>${ourTeam[i].name}</p> <p>${ourTeam[i].position}</p> <img class="box-shadow d-block w-100" src="./img/${ourTeam[i].img}" alt="pictures"></img>`;
     cardsElement.appendChild(cardElement);
     cardElement.classList.add("col-12", "col-sm-6", "col-md-4", "col-xl-2")
 
